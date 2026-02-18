@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "sets": [
+    {
+      "id": "requate.packs.easy.1",
+      "title": "Easy Peasy I",
+      "description": "20 Easy Puzzles",
+      "level": "easy",
+      "puzzleCount": 20,
+      "price": "$0.99",
+      "iap": true
+    }
+  ]
+}
