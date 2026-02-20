@@ -1,37 +1,49 @@
 /**
  * Daily Puzzle Rotation Script
  *
- * Reads daily/pool.json (all daily puzzles) and generates sets/daily.rqs
- * (MessagePack) with a rolling 7-day window.
+ * Reads daily/manifest.json and individual .rq puzzle files (MessagePack),
+ * generates sets/daily.rqs (MessagePack) with a rolling 7-day window.
  *
  * Run: node scripts/rotate-daily-puzzles.js
  */
 
 const fs = require('fs');
 const path = require('path');
-const { encode } = require('@msgpack/msgpack');
+const { decode, encode } = require('@msgpack/msgpack');
 
 const DEFAULT_EPOCH = '2026-02-18';
 const MAX_WINDOW = 7;
 
 // Resolve paths relative to repo root
 const repoRoot = path.resolve(__dirname, '..');
-const poolPath = path.join(repoRoot, 'daily', 'pool.json');
+const manifestPath = path.join(repoRoot, 'daily', 'manifest.json');
+const puzzlesDir = path.join(repoRoot, 'daily', 'puzzles');
 const outputPath = path.join(repoRoot, 'sets', 'daily.rqs');
 
-// Read pool
-if (!fs.existsSync(poolPath)) {
-  console.error('Error: daily/pool.json not found');
+// Read manifest
+if (!fs.existsSync(manifestPath)) {
+  console.error('Error: daily/manifest.json not found');
   process.exit(1);
 }
 
-const pool = JSON.parse(fs.readFileSync(poolPath, 'utf8'));
-const { puzzles } = pool;
-const epoch = pool.epoch || DEFAULT_EPOCH;
+const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+const { puzzles } = manifest;
+const epoch = manifest.epoch || DEFAULT_EPOCH;
 
 if (!puzzles || puzzles.length === 0) {
-  console.log('No puzzles in pool');
+  console.log('No puzzles in manifest');
   process.exit(0);
+}
+
+// Helper to read .rq puzzle file (MessagePack)
+function readPuzzle(id) {
+  const puzzlePath = path.join(puzzlesDir, id + '.rq');
+  if (!fs.existsSync(puzzlePath)) {
+    console.error('Puzzle file not found: ' + puzzlePath);
+    return null;
+  }
+  const buffer = fs.readFileSync(puzzlePath);
+  return decode(buffer);
 }
 
 // Calculate days since epoch
@@ -41,7 +53,18 @@ const currentDate = new Date(today + 'T00:00:00Z');
 const daysSinceEpoch = Math.floor((currentDate - epochDate) / (1000 * 60 * 60 * 24));
 
 if (daysSinceEpoch < 0) {
-  console.log(`Before epoch (${epoch}) - not yet started`);
+  console.log(`Before epoch (${epoch}) - generating empty daily pack`);
+  const dailyPack = {
+    id: 'daily',
+    title: 'Daily Puzzles',
+    level: 'progressive',
+    puzzles: []
+  };
+  const setsDir = path.dirname(outputPath);
+  if (!fs.existsSync(setsDir)) {
+    fs.mkdirSync(setsDir, { recursive: true });
+  }
+  fs.writeFileSync(outputPath, Buffer.from(encode(dailyPack)));
   process.exit(0);
 }
 
@@ -50,21 +73,25 @@ const currentDayIndex = Math.min(daysSinceEpoch, puzzles.length - 1);
 const windowSize = Math.min(currentDayIndex + 1, MAX_WINDOW);
 const startIndex = Math.max(0, currentDayIndex - windowSize + 1);
 
-// Build daily pack with puzzles in the window
+// Build daily pack with puzzles in the window (read full data from .rq files)
 const dailyPuzzles = [];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 for (let i = startIndex; i <= currentDayIndex; i++) {
-  const puzzle = puzzles[i];
-  const puzzleDate = new Date(epochDate);
-  puzzleDate.setUTCDate(puzzleDate.getUTCDate() + i);
-  const dateStr = puzzleDate.toISOString().split('T')[0];
-  const title = `${months[puzzleDate.getUTCMonth()]} ${puzzleDate.getUTCDate()}, ${puzzleDate.getUTCFullYear()}`;
+  const puzzleMeta = puzzles[i];
+  const puzzleData = readPuzzle(puzzleMeta.id);
 
-  dailyPuzzles.push({
-    ...puzzle,
-    t: title,
-    date: dateStr
-  });
+  if (puzzleData) {
+    const puzzleDate = new Date(epochDate);
+    puzzleDate.setUTCDate(puzzleDate.getUTCDate() + i);
+    const dateStr = puzzleDate.toISOString().split('T')[0];
+    const title = `${months[puzzleDate.getUTCMonth()]} ${puzzleDate.getUTCDate()}, ${puzzleDate.getUTCFullYear()}`;
+
+    dailyPuzzles.push({
+      ...puzzleData,
+      t: title,
+      date: dateStr
+    });
+  }
 }
 
 // Build pack structure (same as any other .rqs)
@@ -87,4 +114,4 @@ fs.writeFileSync(outputPath, Buffer.from(encode(dailyPack)));
 console.log(`Generated daily.rqs for ${today} (Day ${daysSinceEpoch + 1})`);
 console.log(`  Epoch: ${epoch}`);
 console.log(`  Window: Day ${startIndex + 1} - Day ${currentDayIndex + 1} (${dailyPuzzles.length} puzzles)`);
-console.log(`  Total in pool: ${puzzles.length} puzzles`);
+console.log(`  Total in manifest: ${puzzles.length} puzzles`);
