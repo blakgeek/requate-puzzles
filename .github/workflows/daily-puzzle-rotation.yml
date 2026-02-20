@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add daily/pool.json
+          git add sets/daily.rqs
           # Only commit if there are changes
           git diff --staged --quiet || git commit -m "Daily rotation: $(date -u +%Y-%m-%d)"
           git push
