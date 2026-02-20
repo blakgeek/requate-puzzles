@@ -1,0 +1,810 @@
+{
+  "epoch": "2026-02-20",
+  "puzzles": [
+    {
+      "id": "E1IHMWq1e",
+      "t": "Day 1",
+      "l": "medium",
+      "r": 17,
+      "c": 9
+    },
+    {
+      "id": "E1uzVv_C",
+      "t": "Day 2",
+      "l": "easy",
+      "r": 9,
+      "c": 13
+    },
+    {
+      "id": "NyFwYCskl",
+      "t": "Day 3",
+      "l": "easy",
+      "r": 11,
+      "c": 9
+    },
+    {
+      "id": "VyKn0Dpkl",
+      "t": "Day 4",
+      "l": "medium",
+      "r": 15,
+      "c": 11
+    },
+    {
+      "id": "4kcIGtCJx",
+      "t": "Day 5",
+      "l": "medium",
+      "r": 16,
+      "c": 14
+    },
+    {
+      "id": "Ek270Xlee",
+      "t": "Day 6",
+      "l": "hard",
+      "r": 16,
+      "c": 14
+    },
+    {
+      "id": "N1kJ3u-xe",
+      "t": "Day 7",
+      "l": "hard",
+      "r": 18,
+      "c": 13
+    },
+    {
+      "id": "419Jc8zxl",
+      "t": "Day 8",
+      "l": "medium",
+      "r": 11,
+      "c": 13
+    },
+    {
+      "id": "Vyk342Gge",
+      "t": "Day 9",
+      "l": "hard",
+      "r": 18,
+      "c": 13
+    },
+    {
+      "id": "4y3WATGel",
+      "t": "Day 10",
+      "l": "hard",
+      "r": 16,
+      "c": 14
+    },
+    {
+      "id": "V1ll9YSee",
+      "t": "Day 11",
+      "l": "easy",
+      "r": 13,
+      "c": 9
+    },
+    {
+      "id": "VJvL5hLee",
+      "t": "Day 12",
+      "l": "hard",
+      "r": 18,
+      "c": 11
+    },
+    {
+      "id": "Nyu62nLee",
+      "t": "Day 13",
+      "l": "medium",
+      "r": 16,
+      "c": 13
+    },
+    {
+      "id": "NJT2kPAlg",
+      "t": "Day 14",
+      "l": "easy",
+      "r": 11,
+      "c": 9
+    },
+    {
+      "id": "VJW47a0lx",
+      "t": "Day 15",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "E1DW124fx",
+      "t": "Day 16",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "VyBwHcdex",
+      "t": "Day 17",
+      "l": "medium",
+      "r": 15,
+      "c": 15
+    },
+    {
+      "id": "NkJVDingx",
+      "t": "Day 18",
+      "l": "hard",
+      "r": 15,
+      "c": 13
+    },
+    {
+      "id": "Vkpysj2ex",
+      "t": "Day 19",
+      "l": "hard",
+      "r": 17,
+      "c": 11
+    },
+    {
+      "id": "V1ldFul-x",
+      "t": "Day 20",
+      "l": "medium",
+      "r": 13,
+      "c": 11
+    },
+    {
+      "id": "NyFCbUrZe",
+      "t": "Day 21",
+      "l": "hard",
+      "r": 19,
+      "c": 13
+    },
+    {
+      "id": "41V5NLSZg",
+      "t": "Day 22",
+      "l": "hard",
+      "r": 14,
+      "c": 13
+    },
+    {
+      "id": "41zqvt8-l",
+      "t": "Day 23",
+      "l": "hard",
+      "r": 18,
+      "c": 11
+    },
+    {
+      "id": "NJeXwFuZl",
+      "t": "Day 24",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "4kcUdF_-l",
+      "t": "Day 25",
+      "l": "easy",
+      "r": 11,
+      "c": 9
+    },
+    {
+      "id": "NkMTfR2Zx",
+      "t": "Day 26",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "4yH_SR2be",
+      "t": "Day 27",
+      "l": "medium",
+      "r": 14,
+      "c": 12
+    },
+    {
+      "id": "4JaKIC2Zx",
+      "t": "Day 28",
+      "l": "medium",
+      "r": 12,
+      "c": 11
+    },
+    {
+      "id": "4JSlTiVMe",
+      "t": "Day 29",
+      "l": "medium",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "4yKNRjEfe",
+      "t": "Day 30",
+      "l": "medium",
+      "r": 15,
+      "c": 13
+    },
+    {
+      "id": "EyzEg3NMl",
+      "t": "Day 31",
+      "l": "easy",
+      "r": 11,
+      "c": 9
+    },
+    {
+      "id": "NJRg72Vzg",
+      "t": "Day 32",
+      "l": "hard",
+      "r": 19,
+      "c": 11
+    },
+    {
+      "id": "4ye1H3NGe",
+      "t": "Day 33",
+      "l": "hard",
+      "r": 18,
+      "c": 13
+    },
+    {
+      "id": "4kCs5GBfl",
+      "t": "Day 34",
+      "l": "medium",
+      "r": 13,
+      "c": 13
+    },
+    {
+      "id": "E1GpO1sGg",
+      "t": "Day 35",
+      "l": "hard",
+      "r": 21,
+      "c": 11
+    },
+    {
+      "id": "EyfzsJsGe",
+      "t": "Day 36",
+      "l": "hard",
+      "r": 15,
+      "c": 11
+    },
+    {
+      "id": "NJxe2Jszx",
+      "t": "Day 37",
+      "l": "easy",
+      "r": 11,
+      "c": 9
+    },
+    {
+      "id": "4kjah1jGx",
+      "t": "Day 38",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "41-0IAPrg",
+      "t": "Day 39",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "4J6MqD_Bl",
+      "t": "Day 40",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "VkQZriqHl",
+      "t": "Day 41",
+      "l": "medium",
+      "r": 15,
+      "c": 11
+    },
+    {
+      "id": "E1EBp-hBe",
+      "t": "Day 42",
+      "l": "medium",
+      "r": 14,
+      "c": 11
+    },
+    {
+      "id": "V1spMTaBl",
+      "t": "Day 43",
+      "l": "hard",
+      "r": 14,
+      "c": 11
+    },
+    {
+      "id": "4kLOcsCSe",
+      "t": "Day 44",
+      "l": "hard",
+      "r": 13,
+      "c": 13
+    },
+    {
+      "id": "V12QTn1Ul",
+      "t": "Day 45",
+      "l": "hard",
+      "r": 15,
+      "c": 13
+    },
+    {
+      "id": "VkxveZ-Ul",
+      "t": "Day 46",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "EyXzXZ-Ig",
+      "t": "Day 47",
+      "l": "hard",
+      "r": 13,
+      "c": 13
+    },
+    {
+      "id": "E1soDBbUg",
+      "t": "Day 48",
+      "l": "hard",
+      "r": 16,
+      "c": 14
+    },
+    {
+      "id": "V1aUKrWUl",
+      "t": "Day 49",
+      "l": "medium",
+      "r": 12,
+      "c": 11
+    },
+    {
+      "id": "V1Zx13QUx",
+      "t": "Day 50",
+      "l": "medium",
+      "r": 15,
+      "c": 11
+    },
+    {
+      "id": "4kttsBEUx",
+      "t": "Day 51",
+      "l": "medium",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "Vyx4NotLx",
+      "t": "Day 52",
+      "l": "hard",
+      "r": 14,
+      "c": 14
+    },
+    {
+      "id": "VJYGy2oIe",
+      "t": "Day 53",
+      "l": "easy",
+      "r": 13,
+      "c": 11
+    },
+    {
+      "id": "NklbW2sIg",
+      "t": "Day 54",
+      "l": "easy",
+      "r": 11,
+      "c": 13
+    },
+    {
+      "id": "4kavIP0Ug",
+      "t": "Day 55",
+      "l": "medium",
+      "r": 10,
+      "c": 12
+    },
+    {
+      "id": "N1AIOP0Lg",
+      "t": "Day 56",
+      "l": "medium",
+      "r": 9,
+      "c": 13
+    },
+    {
+      "id": "EykzX9Zwl",
+      "t": "Day 57",
+      "l": "migraine",
+      "r": 24,
+      "c": 18
+    },
+    {
+      "id": "N1sYr5bDx",
+      "t": "Day 58",
+      "l": "hard",
+      "r": 14,
+      "c": 13
+    },
+    {
+      "id": "VJBKd7IDg",
+      "t": "Day 59",
+      "l": "medium",
+      "r": 12,
+      "c": 11
+    },
+    {
+      "id": "NyOtKmIve",
+      "t": "Day 60",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "Nym5o7LDe",
+      "t": "Day 61",
+      "l": "medium",
+      "r": 13,
+      "c": 15
+    },
+    {
+      "id": "NymLamUPe",
+      "t": "Day 62",
+      "l": "easy",
+      "r": 11,
+      "c": 10
+    },
+    {
+      "id": "4kD23utvx",
+      "t": "Day 63",
+      "l": "migraine",
+      "r": 21,
+      "c": 15
+    },
+    {
+      "id": "VkWbAuFwg",
+      "t": "Day 64",
+      "l": "medium",
+      "r": 15,
+      "c": 9
+    },
+    {
+      "id": "4k5qxKYwx",
+      "t": "Day 65",
+      "l": "hard",
+      "r": 13,
+      "c": 13
+    },
+    {
+      "id": "4yALzKKvl",
+      "t": "Day 66",
+      "l": "medium",
+      "r": 12,
+      "c": 12
+    },
+    {
+      "id": "NyTBxXRwe",
+      "t": "Day 67",
+      "l": "easy",
+      "r": 9,
+      "c": 12
+    },
+    {
+      "id": "EkCMZXRPx",
+      "t": "Day 68",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "4J20qBWdx",
+      "t": "Day 69",
+      "l": "medium",
+      "r": 11,
+      "c": 12
+    },
+    {
+      "id": "NyZa2S-Ol",
+      "t": "Day 70",
+      "l": "medium",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "Vkg4wiGdl",
+      "t": "Day 71",
+      "l": "hard",
+      "r": 14,
+      "c": 13
+    },
+    {
+      "id": "E1ahaDQue",
+      "t": "Day 72",
+      "l": "hard",
+      "r": 14,
+      "c": 16
+    },
+    {
+      "id": "VJlc9suux",
+      "t": "Day 73",
+      "l": "hard",
+      "r": 16,
+      "c": 11
+    },
+    {
+      "id": "EyN4hjOOl",
+      "t": "Day 74",
+      "l": "easy",
+      "r": 10,
+      "c": 11
+    },
+    {
+      "id": "41MqTjuug",
+      "t": "Day 75",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "VJmCHv_Fx",
+      "t": "Day 76",
+      "l": "easy",
+      "r": 11,
+      "c": 15
+    },
+    {
+      "id": "Ny9x9wuKg",
+      "t": "Day 77",
+      "l": "hard",
+      "r": 14,
+      "c": 14
+    },
+    {
+      "id": "Vyim3vdFe",
+      "t": "Day 78",
+      "l": "medium",
+      "r": 14,
+      "c": 9
+    },
+    {
+      "id": "Ny8KJ_OKg",
+      "t": "Day 79",
+      "l": "migraine",
+      "r": 16,
+      "c": 13
+    },
+    {
+      "id": "4JAA-_OFe",
+      "t": "Day 80",
+      "l": "hard",
+      "r": 12,
+      "c": 13
+    },
+    {
+      "id": "4kKAM_OFl",
+      "t": "Day 81",
+      "l": "medium",
+      "r": 14,
+      "c": 15
+    },
+    {
+      "id": "Vyh3Bu_Fg",
+      "t": "Day 82",
+      "l": "easy",
+      "r": 15,
+      "c": 11
+    },
+    {
+      "id": "4kIXP_dYg",
+      "t": "Day 83",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "Vk8Z8AFKx",
+      "t": "Day 84",
+      "l": "easy",
+      "r": 12,
+      "c": 11
+    },
+    {
+      "id": "Vy4kn4ote",
+      "t": "Day 85",
+      "l": "medium",
+      "r": 16,
+      "c": 14
+    },
+    {
+      "id": "EJTWOY2Ke",
+      "t": "Day 86",
+      "l": "medium",
+      "r": 15,
+      "c": 11
+    },
+    {
+      "id": "NkY3KLRKl",
+      "t": "Day 87",
+      "l": "migraine",
+      "r": 19,
+      "c": 15
+    },
+    {
+      "id": "EJvVnIRFx",
+      "t": "Day 88",
+      "l": "hard",
+      "r": 17,
+      "c": 13
+    },
+    {
+      "id": "EJsJCk1cg",
+      "t": "Day 89",
+      "l": "hard",
+      "r": 18,
+      "c": 15
+    },
+    {
+      "id": "E1Xw68zqg",
+      "t": "Day 90",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "V1ZgNqE5e",
+      "t": "Day 91",
+      "l": "medium",
+      "r": 10,
+      "c": 11
+    },
+    {
+      "id": "VkwYN9Vqe",
+      "t": "Day 92",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "EJPvNAH9l",
+      "t": "Day 93",
+      "l": "hard",
+      "r": 17,
+      "c": 17
+    },
+    {
+      "id": "4JCnLRSqg",
+      "t": "Day 94",
+      "l": "medium",
+      "r": 15,
+      "c": 15
+    },
+    {
+      "id": "V13f7G89g",
+      "t": "Day 95",
+      "l": "migraine",
+      "r": 19,
+      "c": 19
+    },
+    {
+      "id": "EkDr9Md5g",
+      "t": "Day 96",
+      "l": "hard",
+      "r": 14,
+      "c": 13
+    },
+    {
+      "id": "Vy2-uFoce",
+      "t": "Day 97",
+      "l": "easy",
+      "r": 12,
+      "c": 12
+    },
+    {
+      "id": "VyIMFtice",
+      "t": "Day 98",
+      "l": "easy",
+      "r": 10,
+      "c": 10
+    },
+    {
+      "id": "Ny6YeqTcg",
+      "t": "Day 99",
+      "l": "medium",
+      "r": 19,
+      "c": 12
+    },
+    {
+      "id": "41vRGc69g",
+      "t": "Day 100",
+      "l": "medium",
+      "r": 15,
+      "c": 13
+    },
+    {
+      "id": "4JapvgJjg",
+      "t": "Day 101",
+      "l": "hard",
+      "r": 15,
+      "c": 15
+    },
+    {
+      "id": "VkuenOJol",
+      "t": "Day 102",
+      "l": "migraine",
+      "r": 13,
+      "c": 13
+    },
+    {
+      "id": "VJJNylWsg",
+      "t": "Day 103",
+      "l": "hard",
+      "r": 13,
+      "c": 12
+    },
+    {
+      "id": "Eymh8KVsx",
+      "t": "Day 104",
+      "l": "easy",
+      "r": 10,
+      "c": 11
+    },
+    {
+      "id": "41SrvJ8jg",
+      "t": "Day 105",
+      "l": "easy",
+      "r": 10,
+      "c": 12
+    },
+    {
+      "id": "Vy503Wusg",
+      "t": "Day 106",
+      "l": "easy",
+      "r": 11,
+      "c": 11
+    },
+    {
+      "id": "N17ulzdsx",
+      "t": "Day 107",
+      "l": "medium",
+      "r": 14,
+      "c": 15
+    },
+    {
+      "id": "N1VgMMdjg",
+      "t": "Day 108",
+      "l": "medium",
+      "r": 15,
+      "c": 13
+    },
+    {
+      "id": "4y3Rkdsol",
+      "t": "Day 109",
+      "l": "hard",
+      "r": 15,
+      "c": 15
+    },
+    {
+      "id": "41wPZdjsl",
+      "t": "Day 110",
+      "l": "hard",
+      "r": 15,
+      "c": 12
+    },
+    {
+      "id": "4JSZWoRix",
+      "t": "Day 111",
+      "l": "migraine",
+      "r": 18,
+      "c": 15
+    },
+    {
+      "id": "E13kF4DL-",
+      "t": "Day 112",
+      "l": "easy",
+      "r": 11,
+      "c": 10
+    },
+    {
+      "id": "4JeH1AOyl",
+      "t": "Day 113",
+      "l": "medium",
+      "r": 11,
+      "c": 10
+    },
+    {
+      "id": "4yP28q7xx",
+      "t": "Day 114",
+      "l": "easy",
+      "r": 10,
+      "c": 10
+    },
+    {
+      "id": "V1hhJEnyx",
+      "t": "Day 115",
+      "l": "easy",
+      "r": 13,
+      "c": 11
+    }
+  ]
+}
