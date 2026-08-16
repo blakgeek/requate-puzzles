@@ -89,7 +89,11 @@ for (let i = startIndex; i <= currentDayIndex; i++) {
     dailyPuzzles.push({
       ...puzzleData,
       t: title,
-      date: dateStr
+      date: dateStr,
+      // The day number players see ("REquate #47"). Positional: only the
+      // rotation knows a puzzle's place in the queue, so clients should not
+      // have to re-derive it from the epoch.
+      day: i + 1
     });
   }
 }
