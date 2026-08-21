@@ -1,0 +1,4 @@
+# Editor and OS files. This repo is public and is served as the CDN, so
+# anything committed here is world-readable and reachable over HTTP.
+.DS_Store
+.idea/
